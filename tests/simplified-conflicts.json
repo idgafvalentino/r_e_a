@@ -1,0 +1,744 @@
+{
+  "all": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Utilitarianism",
+      "framework2": "Rights-Based Ethics",
+      "frameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "action": "install_filters",
+      "description": "Different actions recommended by different frameworks: Utilitarianism recommends install_filters while Rights-Based Ethics recommends relocate_facility",
+      "severity": "medium",
+      "paths": [
+        {
+          "id": "consequentialism_path",
+          "framework": "Utilitarianism",
+          "framework_id": "consequentialism",
+          "framework_type": "pure",
+          "conclusion": "install_filters",
+          "strength": "strong",
+          "action": "install_filters",
+          "argument": "From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.",
+          "source_elements": [
+            {
+              "id": "6p4hp0enfff-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Maximize overall wellbeing by balancing health and economic concerns",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Installing filters provides the optimal balance between health protection and economic stability",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Filters may not completely eliminate health risks",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Even partial risk reduction is better than no action, and the economic benefits are preserved",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "6p4hp0enfff-objection"
+            },
+            {
+              "id": "6p4hp0enfff-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "The pure conclusion is to install_filters",
+              "conclusion": "install_filters",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "6p4hp0enfff-principle",
+                "6p4hp0enfff-justification",
+                "6p4hp0enfff-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.7,
+            "workers": 0.7,
+            "company_owners": 0.6
+          }
+        },
+        {
+          "id": "rights_based_path",
+          "framework": "Rights-Based Ethics",
+          "framework_id": "rights_based",
+          "framework_type": "pure",
+          "conclusion": "relocate_facility",
+          "strength": "strong",
+          "action": "relocate_facility",
+          "argument": "From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.",
+          "source_elements": [
+            {
+              "id": "h4ndef2aawr-principle",
+              "type": "principle",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Respect the fundamental right to health and clean environment",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-justification",
+              "type": "justification",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocating the facility is the only way to fully protect residents' rights to health",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-objection",
+              "type": "objection",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocation may violate workers' rights to economic security",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-response",
+              "type": "response",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Health rights take precedence over economic considerations when both cannot be fully satisfied",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "h4ndef2aawr-objection"
+            },
+            {
+              "id": "h4ndef2aawr-conclusion",
+              "type": "conclusion",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "The pure conclusion is to relocate_facility",
+              "conclusion": "relocate_facility",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "h4ndef2aawr-principle",
+                "h4ndef2aawr-justification",
+                "h4ndef2aawr-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.9,
+            "workers": 0.4,
+            "company_owners": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "type": "CROSS_ACTION_PRINCIPLE",
+      "framework1": "Utilitarianism",
+      "framework2": "Rights-Based Ethics",
+      "frameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "action": "install_filters",
+      "element1": {
+        "id": "6p4hp0enfff-principle",
+        "type": "principle",
+        "framework": "Utilitarianism",
+        "action": "install_filters",
+        "content": "Maximize overall wellbeing by balancing health and economic concerns",
+        "strength": "strong",
+        "relevance": 0.9,
+        "conflicting_principles": [
+          "Respect the fundamental right to health and clean environment"
+        ]
+      },
+      "element2": {
+        "id": "h4ndef2aawr-principle",
+        "type": "principle",
+        "framework": "Rights-Based Ethics",
+        "action": "relocate_facility",
+        "content": "Respect the fundamental right to health and clean environment",
+        "strength": "strong",
+        "relevance": 0.85,
+        "conflicting_principles": [
+          "Maximize overall wellbeing by balancing health and economic concerns"
+        ]
+      },
+      "description": "Conflicting principles between different actions: Maximize overall wellbeing by balancing health and economic concerns (install_filters) vs Respect the fundamental right to health and clean environment (relocate_facility)",
+      "severity": "high",
+      "paths": [
+        {
+          "id": "consequentialism_path",
+          "framework": "Utilitarianism",
+          "framework_id": "consequentialism",
+          "framework_type": "pure",
+          "conclusion": "install_filters",
+          "strength": "strong",
+          "action": "install_filters",
+          "argument": "From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.",
+          "source_elements": [
+            {
+              "id": "6p4hp0enfff-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Maximize overall wellbeing by balancing health and economic concerns",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Installing filters provides the optimal balance between health protection and economic stability",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Filters may not completely eliminate health risks",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Even partial risk reduction is better than no action, and the economic benefits are preserved",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "6p4hp0enfff-objection"
+            },
+            {
+              "id": "6p4hp0enfff-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "The pure conclusion is to install_filters",
+              "conclusion": "install_filters",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "6p4hp0enfff-principle",
+                "6p4hp0enfff-justification",
+                "6p4hp0enfff-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.7,
+            "workers": 0.7,
+            "company_owners": 0.6
+          }
+        },
+        {
+          "id": "rights_based_path",
+          "framework": "Rights-Based Ethics",
+          "framework_id": "rights_based",
+          "framework_type": "pure",
+          "conclusion": "relocate_facility",
+          "strength": "strong",
+          "action": "relocate_facility",
+          "argument": "From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.",
+          "source_elements": [
+            {
+              "id": "h4ndef2aawr-principle",
+              "type": "principle",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Respect the fundamental right to health and clean environment",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-justification",
+              "type": "justification",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocating the facility is the only way to fully protect residents' rights to health",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-objection",
+              "type": "objection",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocation may violate workers' rights to economic security",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-response",
+              "type": "response",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Health rights take precedence over economic considerations when both cannot be fully satisfied",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "h4ndef2aawr-objection"
+            },
+            {
+              "id": "h4ndef2aawr-conclusion",
+              "type": "conclusion",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "The pure conclusion is to relocate_facility",
+              "conclusion": "relocate_facility",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "h4ndef2aawr-principle",
+                "h4ndef2aawr-justification",
+                "h4ndef2aawr-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.9,
+            "workers": 0.4,
+            "company_owners": 0.3
+          }
+        }
+      ]
+    }
+  ],
+  "sameAction": [],
+  "crossAction": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Utilitarianism",
+      "framework2": "Rights-Based Ethics",
+      "frameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "action": "install_filters",
+      "description": "Different actions recommended by different frameworks: Utilitarianism recommends install_filters while Rights-Based Ethics recommends relocate_facility",
+      "severity": "medium",
+      "paths": [
+        {
+          "id": "consequentialism_path",
+          "framework": "Utilitarianism",
+          "framework_id": "consequentialism",
+          "framework_type": "pure",
+          "conclusion": "install_filters",
+          "strength": "strong",
+          "action": "install_filters",
+          "argument": "From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.",
+          "source_elements": [
+            {
+              "id": "6p4hp0enfff-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Maximize overall wellbeing by balancing health and economic concerns",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Installing filters provides the optimal balance between health protection and economic stability",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Filters may not completely eliminate health risks",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Even partial risk reduction is better than no action, and the economic benefits are preserved",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "6p4hp0enfff-objection"
+            },
+            {
+              "id": "6p4hp0enfff-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "The pure conclusion is to install_filters",
+              "conclusion": "install_filters",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "6p4hp0enfff-principle",
+                "6p4hp0enfff-justification",
+                "6p4hp0enfff-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.7,
+            "workers": 0.7,
+            "company_owners": 0.6
+          }
+        },
+        {
+          "id": "rights_based_path",
+          "framework": "Rights-Based Ethics",
+          "framework_id": "rights_based",
+          "framework_type": "pure",
+          "conclusion": "relocate_facility",
+          "strength": "strong",
+          "action": "relocate_facility",
+          "argument": "From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.",
+          "source_elements": [
+            {
+              "id": "h4ndef2aawr-principle",
+              "type": "principle",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Respect the fundamental right to health and clean environment",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-justification",
+              "type": "justification",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocating the facility is the only way to fully protect residents' rights to health",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-objection",
+              "type": "objection",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocation may violate workers' rights to economic security",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-response",
+              "type": "response",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Health rights take precedence over economic considerations when both cannot be fully satisfied",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "h4ndef2aawr-objection"
+            },
+            {
+              "id": "h4ndef2aawr-conclusion",
+              "type": "conclusion",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "The pure conclusion is to relocate_facility",
+              "conclusion": "relocate_facility",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "h4ndef2aawr-principle",
+                "h4ndef2aawr-justification",
+                "h4ndef2aawr-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.9,
+            "workers": 0.4,
+            "company_owners": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "type": "CROSS_ACTION_PRINCIPLE",
+      "framework1": "Utilitarianism",
+      "framework2": "Rights-Based Ethics",
+      "frameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "action": "install_filters",
+      "element1": {
+        "id": "6p4hp0enfff-principle",
+        "type": "principle",
+        "framework": "Utilitarianism",
+        "action": "install_filters",
+        "content": "Maximize overall wellbeing by balancing health and economic concerns",
+        "strength": "strong",
+        "relevance": 0.9,
+        "conflicting_principles": [
+          "Respect the fundamental right to health and clean environment"
+        ]
+      },
+      "element2": {
+        "id": "h4ndef2aawr-principle",
+        "type": "principle",
+        "framework": "Rights-Based Ethics",
+        "action": "relocate_facility",
+        "content": "Respect the fundamental right to health and clean environment",
+        "strength": "strong",
+        "relevance": 0.85,
+        "conflicting_principles": [
+          "Maximize overall wellbeing by balancing health and economic concerns"
+        ]
+      },
+      "description": "Conflicting principles between different actions: Maximize overall wellbeing by balancing health and economic concerns (install_filters) vs Respect the fundamental right to health and clean environment (relocate_facility)",
+      "severity": "high",
+      "paths": [
+        {
+          "id": "consequentialism_path",
+          "framework": "Utilitarianism",
+          "framework_id": "consequentialism",
+          "framework_type": "pure",
+          "conclusion": "install_filters",
+          "strength": "strong",
+          "action": "install_filters",
+          "argument": "From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.",
+          "source_elements": [
+            {
+              "id": "6p4hp0enfff-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Maximize overall wellbeing by balancing health and economic concerns",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Installing filters provides the optimal balance between health protection and economic stability",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Filters may not completely eliminate health risks",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "6p4hp0enfff-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "Even partial risk reduction is better than no action, and the economic benefits are preserved",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "6p4hp0enfff-objection"
+            },
+            {
+              "id": "6p4hp0enfff-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "install_filters",
+              "content": "The pure conclusion is to install_filters",
+              "conclusion": "install_filters",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "6p4hp0enfff-principle",
+                "6p4hp0enfff-justification",
+                "6p4hp0enfff-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.7,
+            "workers": 0.7,
+            "company_owners": 0.6
+          }
+        },
+        {
+          "id": "rights_based_path",
+          "framework": "Rights-Based Ethics",
+          "framework_id": "rights_based",
+          "framework_type": "pure",
+          "conclusion": "relocate_facility",
+          "strength": "strong",
+          "action": "relocate_facility",
+          "argument": "From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.",
+          "source_elements": [
+            {
+              "id": "h4ndef2aawr-principle",
+              "type": "principle",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Respect the fundamental right to health and clean environment",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": [
+                "Maximize overall wellbeing by balancing health and economic concerns"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-justification",
+              "type": "justification",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocating the facility is the only way to fully protect residents' rights to health",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Respect the fundamental right to health and clean environment"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-objection",
+              "type": "objection",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Relocation may violate workers' rights to economic security",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "h4ndef2aawr-response",
+              "type": "response",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "Health rights take precedence over economic considerations when both cannot be fully satisfied",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "h4ndef2aawr-objection"
+            },
+            {
+              "id": "h4ndef2aawr-conclusion",
+              "type": "conclusion",
+              "framework": "Rights-Based Ethics",
+              "action": "relocate_facility",
+              "content": "The pure conclusion is to relocate_facility",
+              "conclusion": "relocate_facility",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "h4ndef2aawr-principle",
+                "h4ndef2aawr-justification",
+                "h4ndef2aawr-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "residents": 0.9,
+            "workers": 0.4,
+            "company_owners": 0.3
+          }
+        }
+      ]
+    }
+  ],
+  "granular": []
+}

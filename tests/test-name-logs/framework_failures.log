@@ -1,0 +1,3 @@
+[2025-03-09T07:36:49.301Z] [WARNING] Framework Lookup: "Non-existent Framework" at testWithRealDilemmas.lookup | Status: FAILURE | Context: { dilemma: 'Crying Baby Dilemma',
+  source: 'reasoning_paths',
+  reason: 'Framework not found' }

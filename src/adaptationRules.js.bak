@@ -1,0 +1,640 @@
+const fs = require('fs');
+const { deepCopy, weakenStrength, highlightChanges } = require('./utils');
+const adaptationLogger = require('./adaptationLogger');
+const frameworkRegistry = require('./frameworkRegistry');
+
+/**
+ * Adaptation rule for number of people affected
+ * @param {Object} reasoningPath - The reasoning path to adapt
+ * @param {Object} newSituation - The new situation to adapt to
+ * @param {Object} originalDilemma - The original dilemma
+ * @param {Object} precedent - The precedent
+ * @returns {Object} The adapted reasoning path
+ */
+function adaptNumberOfPeopleRule(reasoningPath, newSituation, originalDilemma, precedent) {
+  // Log rule application
+  adaptationLogger.logRuleApplication('adaptNumberOfPeopleRule', {
+    reasoningPath: {
+      framework: reasoningPath?.framework,
+      conclusion: reasoningPath?.conclusion,
+      strength: reasoningPath?.strength
+    },
+    newSituation: {
+      hasParams: !!newSituation?.situation?.parameters,
+      params: newSituation?.situation?.parameters
+    },
+    originalDilemma: {
+      hasParams: !!originalDilemma?.situation?.parameters,
+      params: originalDilemma?.situation?.parameters
+    }
+  }, null);
+
+  // Guard against null/undefined inputs
+  if (!reasoningPath || !newSituation || !originalDilemma) {
+    adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+      { reasoningPath, newSituation, originalDilemma }, 
+      false, 
+      "Missing required parameters");
+    return reasoningPath;
+  }
+
+  // Create a deep copy of the reasoning path to avoid modifying the original
+  let adaptedPath = deepCopy(reasoningPath);
+
+  // Check if this rule applies (primarily to utilitarianism)
+  if (reasoningPath.framework !== 'Utilitarianism' && 
+      !reasoningPath.framework.includes('Utilitarian') && 
+      !reasoningPath.framework.includes('Consequentialism')) {
+    // For non-utilitarian frameworks, just note that numbers aren't primary consideration
+    const originalArgument = adaptedPath.argument;
+    adaptedPath.argument += `\n\n[NOTE: The number of people involved is not directly affected by the change in numbers. ${reasoningPath.framework} focuses more on principles than outcomes.]`;
+    
+    adaptationLogger.logArgumentModification('adaptNumberOfPeopleRule', 
+      originalArgument, 
+      adaptedPath.argument, 
+      "Non-utilitarian framework note added");
+    
+    return adaptedPath;
+  }
+
+  // Check if situation and parameters exist
+  if (!originalDilemma.situation || !originalDilemma.situation.parameters || 
+      !newSituation.situation || !newSituation.situation.parameters) {
+    adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+      { 
+        originalSituation: !!originalDilemma.situation,
+        originalParams: !!originalDilemma.situation?.parameters,
+        newSituation: !!newSituation.situation,
+        newParams: !!newSituation.situation?.parameters
+      }, 
+      false, 
+      "Missing situation or parameters");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Extract number of people from original dilemma and new situation
+  const originalMainTrack = originalDilemma.situation.parameters.num_people_main_track;
+  const originalSideTrack = originalDilemma.situation.parameters.num_people_side_track;
+  const newMainTrack = newSituation.situation.parameters.num_people_main_track;
+  const newSideTrack = newSituation.situation.parameters.num_people_side_track;
+
+  // Log parameter check
+  adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+    { 
+      originalMainTrack, 
+      originalSideTrack, 
+      newMainTrack, 
+      newSideTrack,
+      allDefined: originalMainTrack !== undefined && 
+                  originalSideTrack !== undefined && 
+                  newMainTrack !== undefined && 
+                  newSideTrack !== undefined
+    }, 
+    originalMainTrack !== undefined && 
+    originalSideTrack !== undefined && 
+    newMainTrack !== undefined && 
+    newSideTrack !== undefined,
+    "Checking number of people parameters");
+
+  // Skip if we can't determine the numbers
+  if (originalMainTrack === undefined || originalSideTrack === undefined || 
+      newMainTrack === undefined || newSideTrack === undefined) {
+    adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+      { originalMainTrack, originalSideTrack, newMainTrack, newSideTrack }, 
+      false, 
+      "Missing number of people parameters");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Calculate ratios
+  const originalRatio = originalMainTrack / originalSideTrack;
+  const newRatio = newMainTrack / newSideTrack;
+  const originalRatioDisplay = `${originalMainTrack}:${originalSideTrack}`;
+  const newRatioDisplay = `${newMainTrack}:${newSideTrack}`;
+
+  // Log ratio calculation
+  adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+    { originalRatio, newRatio, originalRatioDisplay, newRatioDisplay }, 
+    true, 
+    "Ratio calculation");
+
+  // Compare ratios and adapt reasoning
+  let adaptationText = '';
+  const originalStrength = adaptedPath.strength;
+  
+  if (Math.abs(newRatio - originalRatio) < 0.1) {
+    // Ratios are very similar, no significant change in moral calculus
+    adaptationText = `The ratio of people affected (${newRatioDisplay}) is similar to the original scenario (${originalRatioDisplay}), so the utilitarian calculus remains largely unchanged.`;
+    // No change in strength
+    adaptationLogger.logStrengthChange('adaptNumberOfPeopleRule', 
+      originalStrength, 
+      adaptedPath.strength, 
+      "Similar ratio - no strength change");
+  } else if (newRatio > originalRatio) {
+    // New ratio is higher (more people saved per person sacrificed)
+    adaptationText = `The ratio of people affected has changed from ${originalRatioDisplay} to ${newRatioDisplay}. This higher ratio strengthens the utilitarian argument for sacrificing the few to save the many, as the greater numerical difference increases the net utility of the action. This strengthened ratio provides even more compelling utilitarian justification.`;
+    adaptedPath.strength = 'strong'; // Strengthen the conclusion
+    adaptationLogger.logStrengthChange('adaptNumberOfPeopleRule', 
+      originalStrength, 
+      adaptedPath.strength, 
+      "Higher ratio - strengthened conclusion");
+  } else {
+    // New ratio is lower (fewer people saved per person sacrificed)
+    adaptationText = `The ratio of people affected has changed from ${originalRatioDisplay} to ${newRatioDisplay}. This lower ratio weakens the utilitarian argument for sacrificing the few to save the many, as the smaller numerical difference reduces the net utility of the action.`;
+    adaptedPath.strength = weakenStrength(adaptedPath.strength); // Weaken the conclusion
+    adaptationLogger.logStrengthChange('adaptNumberOfPeopleRule', 
+      originalStrength, 
+      adaptedPath.strength, 
+      "Lower ratio - weakened conclusion");
+  }
+
+  // Handle extreme values
+  if (newMainTrack > 1000 || newSideTrack > 1000) {
+    adaptationText += ` The extremely large number of people involved (${newMainTrack} vs ${newSideTrack}) makes the utilitarian calculation even more compelling, as the sheer scale of potential harm/benefit is substantially greater.`;
+    adaptationLogger.logParameterValidation('adaptNumberOfPeopleRule', 
+      { newMainTrack, newSideTrack }, 
+      true, 
+      "Extreme values detected");
+  }
+
+  // Log argument before modification
+  adaptationLogger.logArgumentModification('adaptNumberOfPeopleRule', 
+    adaptedPath.argument, 
+    null, 
+    "Before modification");
+
+  // Modify the argument
+  const originalArgument = adaptedPath.argument;
+  adaptedPath.argument = highlightChanges(adaptedPath.argument, adaptedPath.argument + `\n\n${adaptationText}`);
+  
+  // Log argument after modification
+  adaptationLogger.logArgumentModification('adaptNumberOfPeopleRule', 
+    originalArgument, 
+    adaptedPath.argument, 
+    "After modification");
+
+  // Log final output
+  adaptationLogger.logRuleApplication('adaptNumberOfPeopleRule', null, {
+    strengthChanged: originalStrength !== adaptedPath.strength,
+    argumentModified: originalArgument !== adaptedPath.argument,
+    finalStrength: adaptedPath.strength
+  });
+
+  return adaptedPath;
+}
+
+/**
+ * Adaptation rule for certainty of outcome
+ * @param {Object} reasoningPath - The reasoning path to adapt
+ * @param {Object} newSituation - The new situation to adapt to
+ * @param {Object} originalDilemma - The original dilemma
+ * @param {Object} precedent - The precedent
+ * @returns {Object} The adapted reasoning path
+ */
+function adaptCertaintyRule(reasoningPath, newSituation, originalDilemma, precedent) {
+  // Log rule application
+  adaptationLogger.logRuleApplication('adaptCertaintyRule', {
+    reasoningPath: {
+      framework: reasoningPath?.framework,
+      conclusion: reasoningPath?.conclusion,
+      strength: reasoningPath?.strength
+    },
+    newSituation: {
+      hasContextFactors: !!newSituation?.contextual_factors,
+      contextFactors: newSituation?.contextual_factors
+    },
+    originalDilemma: {
+      hasContextFactors: !!originalDilemma?.contextual_factors,
+      contextFactors: originalDilemma?.contextual_factors
+    }
+  }, null);
+
+  if (!reasoningPath || !newSituation || !originalDilemma) {
+    adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+      { reasoningPath, newSituation, originalDilemma }, 
+      false, 
+      "Missing required parameters");
+    return reasoningPath;
+  }
+
+  // Create a deep copy of the reasoning path to avoid modifying the original
+  let adaptedPath = deepCopy(reasoningPath);
+  const originalArgument = adaptedPath.argument;
+
+  // Extract certainty levels from contextual factors
+  let originalCertainty = null;
+  let newCertainty = null;
+
+  // Check if contextual factors exist
+  if (!originalDilemma.contextual_factors || !Array.isArray(originalDilemma.contextual_factors) ||
+      !newSituation.contextual_factors || !Array.isArray(newSituation.contextual_factors)) {
+    adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+      { 
+        originalHasContextFactors: !!originalDilemma.contextual_factors,
+        originalIsArray: Array.isArray(originalDilemma.contextual_factors),
+        newHasContextFactors: !!newSituation.contextual_factors,
+        newIsArray: Array.isArray(newSituation.contextual_factors)
+      }, 
+      false, 
+      "Missing contextual factors");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Extract certainty from contextual factors
+  const originalCertaintyFactor = originalDilemma.contextual_factors.find(f => f.factor === 'certainty_of_outcome');
+  const newCertaintyFactor = newSituation.contextual_factors.find(f => f.factor === 'certainty_of_outcome');
+
+  // Log factor check
+  adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+    { 
+      originalCertaintyFactor, 
+      newCertaintyFactor,
+      bothFound: !!originalCertaintyFactor && !!newCertaintyFactor
+    }, 
+    !!originalCertaintyFactor && !!newCertaintyFactor,
+    "Checking certainty factors");
+
+  // Skip if we can't find the certainty factors
+  if (!originalCertaintyFactor || !newCertaintyFactor) {
+    adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+      { originalCertaintyFactor, newCertaintyFactor }, 
+      false, 
+      "Certainty factor not found in contextual factors");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  originalCertainty = originalCertaintyFactor.value;
+  newCertainty = newCertaintyFactor.value;
+
+  // Skip if values are undefined
+  if (originalCertainty === undefined || newCertainty === undefined) {
+    adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+      { originalCertainty, newCertainty }, 
+      false, 
+      "Certainty values are undefined");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Convert text certainty to numeric if needed
+  const certaintyMap = {
+    high: 3,
+    medium: 2,
+    low: 1,
+    uncertain: 1,
+    certain: 3
+  };
+
+  let origCertaintyNum = typeof originalCertainty === 'number' ? 
+    originalCertainty : 
+    (certaintyMap[originalCertainty.toLowerCase()] || 2);
+  
+  let newCertaintyNum = typeof newCertainty === 'number' ? 
+    newCertainty : 
+    (certaintyMap[newCertainty.toLowerCase()] || 2);
+
+  // Log certainty values
+  adaptationLogger.logParameterValidation('adaptCertaintyRule', 
+    { 
+      originalCertainty, 
+      newCertainty, 
+      origCertaintyNum, 
+      newCertaintyNum,
+      isSame: origCertaintyNum === newCertaintyNum
+    }, 
+    true, 
+    "Certainty values comparison");
+
+  // If certainty has not changed, return unchanged
+  if (origCertaintyNum === newCertaintyNum) {
+    console.log("Certainty unchanged, no modification to argument.");
+    adaptationLogger.logArgumentModification('adaptCertaintyRule', 
+      originalArgument, 
+      originalArgument, 
+      "No change in certainty - returning original");
+    return reasoningPath; // Return original unchanged for same certainty
+  }
+
+  // If certainty has changed
+  let certaintyText = '';
+  const originalStrength = adaptedPath.strength;
+  
+  if (newCertaintyNum < origCertaintyNum) {
+    // Certainty decreased
+    if (reasoningPath.framework === 'Utilitarianism' || reasoningPath.framework.includes('Consequentialism')) {
+      certaintyText = `The reduced certainty (${newCertainty} vs. ${originalCertainty}) impacts the utilitarian calculus, as probable outcomes must be weighted by their likelihood. This makes the expected utility calculation less reliable and weakens the conclusion.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Reduced certainty - weakened utilitarian conclusion");
+    } else if (reasoningPath.framework === 'Kantian' || reasoningPath.framework.includes('Deontology')) {
+      certaintyText = `The reduced certainty (${newCertainty} vs. ${originalCertainty}) impacts the application of the categorical imperative, as the actual consequences of the action become less predictable. Nevertheless, the duty-based reasoning remains largely intact.`;
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Reduced certainty - Kantian framework largely unchanged");
+    } else if (reasoningPath.framework === 'Virtue Ethics' || reasoningPath.framework.includes('Virtue')) {
+      certaintyText = `The reduced certainty (${newCertainty} vs. ${originalCertainty}) calls for greater exercise of practical wisdom (phronesis) to navigate the situation with incomplete information. A virtuous agent must be more cautious in such uncertain circumstances.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Reduced certainty - weakened virtue ethics conclusion");
+    } else {
+      // General case
+      certaintyText = `The reduced certainty (${newCertainty} vs. ${originalCertainty}) makes the moral calculus more difficult and generally weakens confidence in the conclusion.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Reduced certainty - weakened general conclusion");
+    }
+  } else {
+    // Certainty increased
+    if (reasoningPath.framework === 'Utilitarianism' || reasoningPath.framework.includes('Consequentialism')) {
+      certaintyText = `The increased certainty (${newCertainty} vs. ${originalCertainty}) strengthens the utilitarian calculus, as outcomes can be predicted with greater confidence. This makes the expected utility calculation more reliable.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased certainty - strengthened utilitarian conclusion");
+    } else if (reasoningPath.framework === 'Kantian' || reasoningPath.framework.includes('Deontology')) {
+      certaintyText = `The increased certainty (${newCertainty} vs. ${originalCertainty}) provides greater confidence in applying the categorical imperative, as the actual consequences of the action become more predictable. Nevertheless, the duty-based reasoning remains primarily concerned with intentions rather than outcomes.`;
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased certainty - Kantian framework largely unchanged");
+    } else if (reasoningPath.framework === 'Virtue Ethics' || reasoningPath.framework.includes('Virtue')) {
+      certaintyText = `The increased certainty (${newCertainty} vs. ${originalCertainty}) allows for a more straightforward exercise of the virtues, as the character traits required by the situation can be more clearly identified.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased certainty - strengthened virtue ethics conclusion");
+    } else {
+      // General case
+      certaintyText = `The increased certainty (${newCertainty} vs. ${originalCertainty}) clarifies the moral calculus and generally strengthens confidence in the conclusion.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptCertaintyRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased certainty - strengthened general conclusion");
+    }
+  }
+
+  // Log argument before modification
+  adaptationLogger.logArgumentModification('adaptCertaintyRule', 
+    adaptedPath.argument, 
+    null, 
+    "Before modification");
+
+  // Modify the argument
+  adaptedPath.argument = highlightChanges(adaptedPath.argument, adaptedPath.argument + `\n\n${certaintyText}`);
+  
+  // Log argument after modification
+  adaptationLogger.logArgumentModification('adaptCertaintyRule', 
+    originalArgument, 
+    adaptedPath.argument, 
+    "After modification");
+
+  // Log final output
+  adaptationLogger.logRuleApplication('adaptCertaintyRule', null, {
+    strengthChanged: originalStrength !== adaptedPath.strength,
+    argumentModified: originalArgument !== adaptedPath.argument,
+    finalStrength: adaptedPath.strength
+  });
+
+  return adaptedPath;
+}
+
+/**
+ * Adaptation rule for information availability
+ * @param {Object} reasoningPath - The reasoning path to adapt
+ * @param {Object} newSituation - The new situation to adapt to
+ * @param {Object} originalDilemma - The original dilemma
+ * @param {Object} precedent - The precedent
+ * @returns {Object} The adapted reasoning path
+ */
+function adaptInformationAvailabilityRule(reasoningPath, newSituation, originalDilemma, precedent) {
+  // Log rule application
+  adaptationLogger.logRuleApplication('adaptInformationAvailabilityRule', {
+    reasoningPath: {
+      framework: reasoningPath?.framework,
+      conclusion: reasoningPath?.conclusion,
+      strength: reasoningPath?.strength
+    },
+    newSituation: {
+      hasContextFactors: !!newSituation?.contextual_factors,
+      contextFactors: newSituation?.contextual_factors
+    },
+    originalDilemma: {
+      hasContextFactors: !!originalDilemma?.contextual_factors,
+      contextFactors: originalDilemma?.contextual_factors
+    }
+  }, null);
+
+  if (!reasoningPath || !newSituation || !originalDilemma) {
+    adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+      { reasoningPath, newSituation, originalDilemma }, 
+      false, 
+      "Missing required parameters");
+    return reasoningPath;
+  }
+
+  // Create a deep copy of the reasoning path to avoid modifying the original
+  let adaptedPath = deepCopy(reasoningPath);
+  const originalArgument = adaptedPath.argument;
+
+  // Extract information availability from contextual factors
+  let originalInfoAvailability = null;
+  let newInfoAvailability = null;
+
+  // Check if contextual factors exist
+  if (!originalDilemma.contextual_factors || !Array.isArray(originalDilemma.contextual_factors) ||
+      !newSituation.contextual_factors || !Array.isArray(newSituation.contextual_factors)) {
+    adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+      { 
+        originalHasContextFactors: !!originalDilemma.contextual_factors,
+        originalIsArray: Array.isArray(originalDilemma.contextual_factors),
+        newHasContextFactors: !!newSituation.contextual_factors,
+        newIsArray: Array.isArray(newSituation.contextual_factors)
+      }, 
+      false, 
+      "Missing contextual factors");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Extract information availability from contextual factors
+  const originalInfoFactor = originalDilemma.contextual_factors.find(f => f.factor === 'information_availability');
+  const newInfoFactor = newSituation.contextual_factors.find(f => f.factor === 'information_availability');
+
+  // Log factor check
+  adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+    { 
+      originalInfoFactor, 
+      newInfoFactor,
+      bothFound: !!originalInfoFactor && !!newInfoFactor
+    }, 
+    !!originalInfoFactor && !!newInfoFactor,
+    "Checking information availability factors");
+
+  // Skip if we can't find the information availability factors
+  if (!originalInfoFactor || !newInfoFactor) {
+    adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+      { originalInfoFactor, newInfoFactor }, 
+      false, 
+      "Information availability factor not found in contextual factors");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  originalInfoAvailability = originalInfoFactor.value;
+  newInfoAvailability = newInfoFactor.value;
+
+  // Skip if values are undefined
+  if (originalInfoAvailability === undefined || newInfoAvailability === undefined) {
+    adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+      { originalInfoAvailability, newInfoAvailability }, 
+      false, 
+      "Information availability values are undefined");
+    return reasoningPath; // Return original unchanged without modification
+  }
+
+  // Convert text values to numeric if needed
+  const infoMap = {
+    complete: 3,
+    partial: 2,
+    minimal: 1,
+    high: 3,
+    medium: 2,
+    low: 1,
+    incomplete: 1
+  };
+
+  let origInfoNum = typeof originalInfoAvailability === 'number' ? 
+    originalInfoAvailability : 
+    (infoMap[originalInfoAvailability.toLowerCase()] || 2);
+  
+  let newInfoNum = typeof newInfoAvailability === 'number' ? 
+    newInfoAvailability : 
+    (infoMap[newInfoAvailability.toLowerCase()] || 2);
+
+  // Log information availability values
+  adaptationLogger.logParameterValidation('adaptInformationAvailabilityRule', 
+    { 
+      originalInfoAvailability, 
+      newInfoAvailability, 
+      origInfoNum, 
+      newInfoNum,
+      isSame: origInfoNum === newInfoNum
+    }, 
+    true, 
+    "Information availability values comparison");
+
+  // If information availability has not changed, return unchanged
+  if (origInfoNum === newInfoNum) {
+    adaptationLogger.logArgumentModification('adaptInformationAvailabilityRule', 
+      originalArgument, 
+      originalArgument, 
+      "No change in information availability - returning original");
+    return reasoningPath; // Return original unchanged for same information availability
+  }
+
+  // If information availability has changed
+  let infoText = '';
+  const originalStrength = adaptedPath.strength;
+  
+  if (newInfoNum < origInfoNum) {
+    // Information availability decreased
+    if (reasoningPath.framework === 'Utilitarianism' || reasoningPath.framework.includes('Consequentialism')) {
+      infoText = `The decreased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) compromises the utilitarian calculation, as the outcomes cannot be accurately predicted without complete information. This reduces confidence in the expected utility calculation with incomplete information.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Decreased information availability - weakened utilitarian conclusion");
+    } else if (reasoningPath.framework === 'Kantian' || reasoningPath.framework.includes('Deontology')) {
+      infoText = `The decreased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) makes it more difficult to determine the universalizability of maxims and the respect for persons. However, the duty-based approach can still function with incomplete information.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Decreased information availability - weakened Kantian conclusion");
+    } else if (reasoningPath.framework === 'Virtue Ethics' || reasoningPath.framework.includes('Virtue')) {
+      infoText = `The decreased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) requires the virtue of prudence (practical wisdom) to navigate uncertainty. A virtuous agent must acknowledge the limits of their knowledge and proceed with appropriate caution when faced with incomplete information.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Decreased information availability - weakened virtue ethics conclusion");
+    } else {
+      // General case
+      infoText = `The decreased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) makes the moral analysis more difficult and generally weakens confidence in the conclusion when working with incomplete information.`;
+      adaptedPath.strength = weakenStrength(adaptedPath.strength);
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Decreased information availability - weakened general conclusion");
+    }
+  } else {
+    // Information availability increased
+    if (reasoningPath.framework === 'Utilitarianism' || reasoningPath.framework.includes('Consequentialism')) {
+      infoText = `The increased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) enhances the utilitarian calculation, as outcomes can be more accurately predicted with complete information. This increases confidence in the expected utility calculation.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased information availability - strengthened utilitarian conclusion");
+    } else if (reasoningPath.framework === 'Kantian' || reasoningPath.framework.includes('Deontology')) {
+      infoText = `The increased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) allows for more accurate determination of the universalizability of maxims and respect for persons, strengthening the application of the categorical imperative.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased information availability - strengthened Kantian conclusion");
+    } else if (reasoningPath.framework === 'Virtue Ethics' || reasoningPath.framework.includes('Virtue')) {
+      infoText = `The increased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) enables more effective exercise of prudence (practical wisdom), allowing the virtuous agent to make better-informed decisions that exemplify the appropriate virtues.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased information availability - strengthened virtue ethics conclusion");
+    } else {
+      // General case
+      infoText = `The increased information availability (${newInfoAvailability} vs. ${originalInfoAvailability}) improves the moral analysis and generally strengthens confidence in the conclusion.`;
+      adaptedPath.strength = 'strong';
+      adaptationLogger.logStrengthChange('adaptInformationAvailabilityRule', 
+        originalStrength, 
+        adaptedPath.strength, 
+        "Increased information availability - strengthened general conclusion");
+    }
+  }
+
+  // Log argument before modification
+  adaptationLogger.logArgumentModification('adaptInformationAvailabilityRule', 
+    adaptedPath.argument, 
+    null, 
+    "Before modification");
+
+  // Modify the argument
+  adaptedPath.argument = highlightChanges(adaptedPath.argument, adaptedPath.argument + `\n\n${infoText}`);
+  
+  // Log argument after modification
+  adaptationLogger.logArgumentModification('adaptInformationAvailabilityRule', 
+    originalArgument, 
+    adaptedPath.argument, 
+    "After modification");
+
+  // Log final output
+  adaptationLogger.logRuleApplication('adaptInformationAvailabilityRule', null, {
+    strengthChanged: originalStrength !== adaptedPath.strength,
+    argumentModified: originalArgument !== adaptedPath.argument,
+    finalStrength: adaptedPath.strength
+  });
+
+  return adaptedPath;
+}
+
+/**
+ * Adaptation rule for medical triage context
+ * @param {Object} reasoningPath - The reasoning path to adapt
+ * @param {Object} newSit

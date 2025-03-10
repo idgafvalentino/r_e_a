@@ -1,0 +1,340 @@
+{
+  "all": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Utilitarianism",
+      "framework2": "Kantian Deontology",
+      "frameworks": [
+        "Utilitarianism",
+        "Kantian Deontology"
+      ],
+      "action1": "action_a",
+      "action2": "action_b",
+      "action": "action_a",
+      "description": "Different actions recommended by different frameworks: Utilitarianism recommends action_a while Kantian Deontology recommends action_b",
+      "severity": "medium",
+      "paths": [
+        {
+          "id": "path_1",
+          "framework": "Utilitarianism",
+          "framework_id": "utilitarianism",
+          "framework_type": "pure",
+          "conclusion": "action_a",
+          "strength": "strong",
+          "action": "action_a",
+          "argument": "This is a test argument for path 1.",
+          "source_elements": [
+            {
+              "id": "01s5usvns7b7-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test principle 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": []
+            },
+            {
+              "id": "01s5usvns7b7-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test justification 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Test principle 1"
+              ]
+            },
+            {
+              "id": "01s5usvns7b7-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test objection 1",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "01s5usvns7b7-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test response 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "01s5usvns7b7-objection"
+            },
+            {
+              "id": "01s5usvns7b7-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "The pure conclusion is to action_a",
+              "conclusion": "action_a",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "01s5usvns7b7-principle",
+                "01s5usvns7b7-justification",
+                "01s5usvns7b7-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "stakeholder_1": 0.7,
+            "stakeholder_2": 0.6
+          }
+        },
+        {
+          "id": "path_2",
+          "framework": "Kantian Deontology",
+          "framework_id": "kantian_deontology",
+          "framework_type": "pure",
+          "conclusion": "action_b",
+          "strength": "strong",
+          "action": "action_b",
+          "argument": "This is a test argument for path 2.",
+          "source_elements": [
+            {
+              "id": "vwmk9rbohp-principle",
+              "type": "principle",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test principle 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": []
+            },
+            {
+              "id": "vwmk9rbohp-justification",
+              "type": "justification",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test justification 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Test principle 2"
+              ]
+            },
+            {
+              "id": "vwmk9rbohp-objection",
+              "type": "objection",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test objection 2",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "vwmk9rbohp-response",
+              "type": "response",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test response 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "vwmk9rbohp-objection"
+            },
+            {
+              "id": "vwmk9rbohp-conclusion",
+              "type": "conclusion",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "The pure conclusion is to action_b",
+              "conclusion": "action_b",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "vwmk9rbohp-principle",
+                "vwmk9rbohp-justification",
+                "vwmk9rbohp-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "stakeholder_1": 0.5,
+            "stakeholder_2": 0.8
+          }
+        }
+      ]
+    }
+  ],
+  "sameAction": [],
+  "crossAction": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Utilitarianism",
+      "framework2": "Kantian Deontology",
+      "frameworks": [
+        "Utilitarianism",
+        "Kantian Deontology"
+      ],
+      "action1": "action_a",
+      "action2": "action_b",
+      "action": "action_a",
+      "description": "Different actions recommended by different frameworks: Utilitarianism recommends action_a while Kantian Deontology recommends action_b",
+      "severity": "medium",
+      "paths": [
+        {
+          "id": "path_1",
+          "framework": "Utilitarianism",
+          "framework_id": "utilitarianism",
+          "framework_type": "pure",
+          "conclusion": "action_a",
+          "strength": "strong",
+          "action": "action_a",
+          "argument": "This is a test argument for path 1.",
+          "source_elements": [
+            {
+              "id": "01s5usvns7b7-principle",
+              "type": "principle",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test principle 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "conflicting_principles": []
+            },
+            {
+              "id": "01s5usvns7b7-justification",
+              "type": "justification",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test justification 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_principles": [
+                "Test principle 1"
+              ]
+            },
+            {
+              "id": "01s5usvns7b7-objection",
+              "type": "objection",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test objection 1",
+              "strength": "moderate",
+              "relevance": 0.9,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "01s5usvns7b7-response",
+              "type": "response",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "Test response 1",
+              "strength": "strong",
+              "relevance": 0.9,
+              "target_objection": "01s5usvns7b7-objection"
+            },
+            {
+              "id": "01s5usvns7b7-conclusion",
+              "type": "conclusion",
+              "framework": "Utilitarianism",
+              "action": "action_a",
+              "content": "The pure conclusion is to action_a",
+              "conclusion": "action_a",
+              "strength": "strong",
+              "relevance": 0.9,
+              "supporting_elements": [
+                "01s5usvns7b7-principle",
+                "01s5usvns7b7-justification",
+                "01s5usvns7b7-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "stakeholder_1": 0.7,
+            "stakeholder_2": 0.6
+          }
+        },
+        {
+          "id": "path_2",
+          "framework": "Kantian Deontology",
+          "framework_id": "kantian_deontology",
+          "framework_type": "pure",
+          "conclusion": "action_b",
+          "strength": "strong",
+          "action": "action_b",
+          "argument": "This is a test argument for path 2.",
+          "source_elements": [
+            {
+              "id": "vwmk9rbohp-principle",
+              "type": "principle",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test principle 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "conflicting_principles": []
+            },
+            {
+              "id": "vwmk9rbohp-justification",
+              "type": "justification",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test justification 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_principles": [
+                "Test principle 2"
+              ]
+            },
+            {
+              "id": "vwmk9rbohp-objection",
+              "type": "objection",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test objection 2",
+              "strength": "moderate",
+              "relevance": 0.85,
+              "target_components": [
+                "justification"
+              ]
+            },
+            {
+              "id": "vwmk9rbohp-response",
+              "type": "response",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "Test response 2",
+              "strength": "strong",
+              "relevance": 0.85,
+              "target_objection": "vwmk9rbohp-objection"
+            },
+            {
+              "id": "vwmk9rbohp-conclusion",
+              "type": "conclusion",
+              "framework": "Kantian Deontology",
+              "action": "action_b",
+              "content": "The pure conclusion is to action_b",
+              "conclusion": "action_b",
+              "strength": "strong",
+              "relevance": 0.85,
+              "supporting_elements": [
+                "vwmk9rbohp-principle",
+                "vwmk9rbohp-justification",
+                "vwmk9rbohp-response"
+              ]
+            }
+          ],
+          "stakeholder_scores": {
+            "stakeholder_1": 0.5,
+            "stakeholder_2": 0.8
+          }
+        }
+      ]
+    }
+  ],
+  "granular": []
+}

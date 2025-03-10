@@ -1,0 +1,32 @@
+{
+  "resolutions": [
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Balanced)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Balanced Perspective on \"Environmental Justice Dilemma\"\n\n## Values in Tension\nThis ethical dilemma involves tension between different values from Utilitarianism and Rights-Based Ethics:\n\n- **Utilitarianism** No specific claim provided\n- **Rights-Based Ethics** No specific claim provided\n\n## Detailed Analysis\n\n### Utilitarianism Perspective\nUtilitarianism's focus on ethical considerations suggests that:\n- From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.\n\n### Rights-Based Ethics Perspective\nRights-Based Ethics's emphasis on ethical considerations counters that:\n- From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.\n\n## Contextual Analysis\n\nIn the specific context of this dilemma (A community is facing potential health risks from a nearby industrial facility.), several factors are particularly relevant:\n\nThe following parameters significantly influence how we should balance these competing considerations:\n\n- **Severity of health impacts** (0.8): This high value suggests a significant level of severity of health impacts, which strengthens the case for Rights-Based Ethics's concerns about important considerations.\n- **Economic importance of the facility** (0.7): This moderate value indicates a balanced approach is needed, weighing both Utilitarianism's and Rights-Based Ethics's perspectives.\n\n## Balanced Approach\n\nA balanced resolution to this conflict must acknowledge both the concerns raised by Utilitarianism and the considerations emphasized by Rights-Based Ethics. Neither framework alone provides a complete solution.\n\nInstead, we should adopt an approach that:\n\n1. Preserves the core ethical considerations of Utilitarianism\n2. Addresses the important ethical considerations of Rights-Based Ethics\n3. Adapts the approach based on the specific context and parameters of this dilemma\n\n## Recommendations\n\nBased on the above analysis, a balanced approach would involve:\n\n1. Establish clear boundaries and limitations that respect Rights-Based Ethics's concerns\n2. Implement oversight mechanisms to ensure Utilitarianism's objectives are met responsibly\n3. Create a governance framework with equal representation from both ethical perspectives\n",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "balance",
+      "resolutionDescription": "Resolves conflict by balancing competing ethical perspectives. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Balanced)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Balanced Perspective on \"Environmental Justice Dilemma\"\n\n## Values in Tension\nThis ethical dilemma involves tension between different values from Utilitarianism and Rights-Based Ethics:\n\n- **Utilitarianism** No specific claim provided\n- **Rights-Based Ethics** No specific claim provided\n\n## Detailed Analysis\n\n### Utilitarianism Perspective\nUtilitarianism's focus on ethical considerations suggests that:\n- From a consequentialist perspective, installing advanced filtration systems maximizes overall wellbeing by protecting health while preserving jobs.\n\n### Rights-Based Ethics Perspective\nRights-Based Ethics's emphasis on ethical considerations counters that:\n- From a rights-based perspective, residents have a fundamental right to clean air and a healthy environment that overrides economic considerations.\n\n## Contextual Analysis\n\nIn the specific context of this dilemma (A community is facing potential health risks from a nearby industrial facility.), several factors are particularly relevant:\n\nThe following parameters significantly influence how we should balance these competing considerations:\n\n- **Severity of health impacts** (0.8): This high value suggests a significant level of severity of health impacts, which strengthens the case for Rights-Based Ethics's concerns about important considerations.\n- **Economic importance of the facility** (0.7): This moderate value indicates a balanced approach is needed, weighing both Utilitarianism's and Rights-Based Ethics's perspectives.\n\n## Balanced Approach\n\nA balanced resolution to this conflict must acknowledge both the concerns raised by Utilitarianism and the considerations emphasized by Rights-Based Ethics. Neither framework alone provides a complete solution.\n\nInstead, we should adopt an approach that:\n\n1. Preserves the core ethical considerations of Utilitarianism\n2. Addresses the important ethical considerations of Rights-Based Ethics\n3. Adapts the approach based on the specific context and parameters of this dilemma\n\n## Recommendations\n\nBased on the above analysis, a balanced approach would involve:\n\n1. Establish clear boundaries and limitations that respect Rights-Based Ethics's concerns\n2. Implement oversight mechanisms to ensure Utilitarianism's objectives are met responsibly\n3. Create a governance framework with equal representation from both ethical perspectives\n",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_PRINCIPLE",
+      "resolutionStrategy": "balance",
+      "resolutionDescription": "Resolves conflict by balancing competing ethical perspectives. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    }
+  ]
+}

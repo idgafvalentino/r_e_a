@@ -1,0 +1,67 @@
+=======================================================
+           FRAMEWORK REFERENCE DIAGNOSTIC REPORT        
+=======================================================
+
+SUMMARY
+-------
+Generated: 2025-03-09T07:36:48.933Z
+Total Framework References: 12
+Total Framework Lookups: 10
+Successful Lookups: 5
+Failed Lookups: 8
+Success Rate: 50.00%
+
+MOST REFERENCED FRAMEWORKS
+-------------------------
+1. "Utilitarianism" - 1 references
+2. "Kantian Deontology" - 1 references
+3. "Virtue Ethics" - 1 references
+4. "Care Ethics" - 1 references
+5. "Social Contract Theory" - 1 references
+
+COMMON FAILURE REASONS
+---------------------
+1. "Framework not found in database" - 1 occurrences
+2. "Malformed framework structure" - 1 occurrences
+3. "Incomplete framework data" - 1 occurrences
+
+FAILURE HOTSPOTS
+----------------
+1. testFrameworkLookupLogging.failure - 5 failures
+2. testFrameworkFailureLogging.nonexistent - 1 failures
+3. testFrameworkFailureLogging.malformed - 1 failures
+4. testFrameworkFailureLogging.incomplete - 1 failures
+
+FRAMEWORK NAME ISSUES
+--------------------
+Case Inconsistencies:
+- Base name: utilitarianism
+  Variants: Utilitarianism, utilitarianism
+- Base name: virtue ethics
+  Variants: Virtue Ethics, virtue-ethics
+
+Format Inconsistencies:
+- Original: Virtue Ethics
+  Variants: virtue-ethics
+- Original: virtue-ethics
+  Variants: Virtue Ethics
+- Original: Rights-Based Ethics
+  Variants: Rights_Based_Ethics
+- Original: Rights_Based_Ethics
+  Variants: Rights-Based Ethics
+
+No similar names detected.
+
+STRUCTURAL ISSUES
+-----------------
+No structural issues detected
+
+RECOMMENDATIONS
+---------------
+1. High failure rate detected. Consider standardizing framework naming conventions.
+2. Potential naming inconsistencies detected: "Utilitarianism" and "utilitarianism", "Virtue Ethics" and "Hybrid: consequentialism + virtue_ethics", "Virtue Ethics" and "virtue-ethics", "Rights-Based Ethics" and "Rights_Based_Ethics", "Hybrid: consequentialism + virtue_ethics" and "virtue-ethics". Consider standardizing these names.
+3. Focus on these failure hotspots: testFrameworkLookupLogging.failure, testFrameworkFailureLogging.nonexistent, testFrameworkFailureLogging.malformed
+4. Potential naming inconsistencies detected: "Utilitarianism" and "utilitarianism", "Virtue Ethics" and "virtue-ethics", "Virtue Ethics" and "virtue-ethics", "virtue-ethics" and "Virtue Ethics", "Rights-Based Ethics" and "Rights_Based_Ethics", "Rights_Based_Ethics" and "Rights-Based Ethics". Consider standardizing these names.
+
+=======================================================
+End of Report

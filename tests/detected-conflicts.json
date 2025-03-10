@@ -1,0 +1,1255 @@
+{
+  "all": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    }
+  ],
+  "sameAction": [],
+  "crossAction": [
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "relocate_facility",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "continue_operations",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: rights_based + virtue_ethics recommends continue_operations while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "install_filters",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "relocate_facility",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends relocate_facility while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    },
+    {
+      "type": "CROSS_ACTION_VALUE",
+      "framework1": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "framework2": "Hybrid: consequentialism + rights_based + virtue_ethics",
+      "frameworks": [
+        "Hybrid: consequentialism + rights_based + virtue_ethics",
+        "Hybrid: consequentialism + rights_based + virtue_ethics"
+      ],
+      "action1": "install_filters",
+      "action2": "continue_operations",
+      "description": "Different actions recommended by different frameworks: Hybrid: consequentialism + rights_based + virtue_ethics recommends install_filters while Hybrid: consequentialism + rights_based + virtue_ethics recommends continue_operations",
+      "severity": "medium"
+    }
+  ]
+}

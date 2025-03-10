@@ -1,0 +1,13 @@
+{
+  "totalReferences": 2,
+  "totalLookups": 5,
+  "successfulLookups": 5,
+  "failedLookups": 0,
+  "frameworkCounts": {
+    "Utilitarianism": 1,
+    "Kantian Deontology": 1
+  },
+  "failureReasons": {},
+  "failureLocations": {},
+  "lastUpdated": "2025-03-09T16:57:31.314Z"
+}

@@ -1,0 +1,116 @@
+{
+  "resolutions": [
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Utilitarianism Perspective\nWe should consider both economic and health impacts equally.\n\n### Rights-Based Ethics Perspective\nThe principle that rights cannot be violated for utilitarian gains is central to deontological ethics.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Utilitarianism | Under Rights-Based Ethics |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Utilitarianism Perspective\nWe should consider both economic and health impacts equally.\n\n### Rights-Based Ethics Perspective\nThe principle that rights cannot be violated for utilitarian gains is central to deontological ethics.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Utilitarianism | Under Rights-Based Ethics |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_PRINCIPLE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Virtue Ethics-Rights-Based Ethics (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Virtue Ethics Perspective\nA virtuous approach requires balancing prosperity with care for community well-being.\n\n### Rights-Based Ethics Perspective\nThe principle that rights cannot be violated for utilitarian gains is central to deontological ethics.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Virtue Ethics | Under Rights-Based Ethics |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Virtue Ethics",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Care Ethics-Rights-Based Ethics (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Care Ethics Perspective\nFrom a care ethics perspective, we must consider the relationships and interdependencies within the community.\n\n### Rights-Based Ethics Perspective\nThe principle that rights cannot be violated for utilitarian gains is central to deontological ethics.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Care Ethics | Under Rights-Based Ethics |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Care Ethics",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Utilitarianism-Social Contract Theory (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Utilitarianism Perspective\nWe should consider both economic and health impacts equally.\n\n### Social Contract Theory Perspective\nFrom a social contract perspective, the agreement between the facility and the community should be honored.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Utilitarianism | Under Social Contract Theory |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Social Contract Theory"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Virtue Ethics-Social Contract Theory (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Virtue Ethics Perspective\nA virtuous approach requires balancing prosperity with care for community well-being.\n\n### Social Contract Theory Perspective\nFrom a social contract perspective, the agreement between the facility and the community should be honored.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Virtue Ethics | Under Social Contract Theory |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Virtue Ethics",
+        "Social Contract Theory"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Care Ethics-Social Contract Theory (Stakeholder)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Care Ethics Perspective\nFrom a care ethics perspective, we must consider the relationships and interdependencies within the community.\n\n### Social Contract Theory Perspective\nFrom a social contract perspective, the agreement between the facility and the community should be honored.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Care Ethics | Under Social Contract Theory |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Care Ethics",
+        "Social Contract Theory"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Rights-Based Ethics-Social Contract Theory (Stakeholder)",
+      "action": "relocate_facility",
+      "strength": "moderate",
+      "argument": "# Stakeholder-Centered Resolution for \"Environmental Justice Dilemma\"\n\n## Stakeholder Analysis\nThis ethical dilemma affects multiple stakeholders with different levels of impact. A stakeholder-centered approach analyzes how different ethical frameworks impact these stakeholders, with special attention to vulnerable populations.\n\n## Framework Perspectives\n\n### Rights-Based Ethics Perspective\nThe principle that rights cannot be violated for utilitarian gains is central to deontological ethics.\n\n### Social Contract Theory Perspective\nFrom a social contract perspective, the agreement between the facility and the community should be honored.\n\n## Stakeholder Impact Table\n| Stakeholder | Impact Level | Primary Interests | Under Rights-Based Ethics | Under Social Contract Theory |\n|------------|--------------|-------------------|-------------------|-------------------|\n| Direct Subjects | High | Fair treatment, Autonomy, Well-being | Needs analysis | Needs analysis |\n| Decision Makers | Medium | Effectiveness, Legitimacy, Reputation | Needs analysis | Needs analysis |\n| General Public | Low to Medium | Justice, Security, Social cohesion | Needs analysis | Needs analysis |\n| Local Communities | High | Environmental health, Economic opportunities, Quality of life | Needs analysis | Needs analysis |\n| Future Generations | High | Sustainable environment, Resource availability, Climate stability | Needs analysis | Needs analysis |\n| Industry/Business | Medium | Regulatory certainty, Operational freedom, Profit | Needs analysis | Needs analysis |\n\n\n## Recommended Approach\nA stakeholder-centered resolution would:\n\n1. Prioritize protection of the most vulnerable stakeholders\n2. Ensure representation of all affected parties in the decision-making process\n3. Implement oversight mechanisms that include stakeholder participation\n4. Regularly reassess impacts and adjust policies based on stakeholder feedback\n\n",
+      "originalFrameworks": [
+        "Rights-Based Ethics",
+        "Social Contract Theory"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "stakeholder",
+      "resolutionDescription": "Resolves conflict by prioritizing the interests of the most affected stakeholders. This resolution addresses a highly relevant action (85% relevance).",
+      "actionRelevance": 0.85
+    }
+  ]
+}

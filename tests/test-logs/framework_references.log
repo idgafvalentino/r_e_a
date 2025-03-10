@@ -1,0 +1,26 @@
+[2025-03-09T16:57:31.300Z] [INFO] Logs and statistics reset
+[2025-03-09T16:57:31.300Z] [INFO] Framework Reference: "Utilitarianism" at frameworkRegistry.getFrameworkByName | Context: { lookupType: 'byName' }
+[2025-03-09T16:57:31.301Z] [INFO] Framework Lookup: "Utilitarianism" at frameworkRegistry.getFrameworkByName.existing | Status: SUCCESS | Context: { matchedFramework: 'Utilitarianism' }
+[2025-03-09T16:57:31.301Z] [INFO] Framework Lookup: "Utilitarianism" at test-conflict-severity.js | Status: SUCCESS | Context: { util:
+   Framework {
+     id: 'utilitarianism',
+     name: 'Utilitarianism',
+     description:
+      'A consequentialist ethical theory that holds the proper course of action maximizes overall happiness or well-being.',
+     aliases: [ 'utilitarian', 'consequentialism', 'utility', 'consequentialist' ],
+     isHybrid: false,
+     isUnknown: false } }
+[2025-03-09T16:57:31.302Z] [INFO] Framework Reference: "Kantian Deontology" at frameworkRegistry.getFrameworkByName | Context: { lookupType: 'byName' }
+[2025-03-09T16:57:31.302Z] [INFO] Framework Lookup: "Kantian Deontology" at frameworkRegistry.getFrameworkByName.existing | Status: SUCCESS | Context: { matchedFramework: 'Kantian Deontology' }
+[2025-03-09T16:57:31.303Z] [INFO] Framework Lookup: "Kantian Deontology" at test-conflict-severity.js | Status: SUCCESS | Context: { deont:
+   Framework {
+     id: 'kantian_deontology',
+     name: 'Kantian Deontology',
+     description:
+      'A deontological ethical theory developed by Immanuel Kant that emphasizes duty and universal principles.',
+     aliases:
+      [ 'kantian ethics', 'deontology', 'kant', 'categorical imperative', 'deontological' ],
+     isHybrid: false,
+     isUnknown: false } }
+[2025-03-09T16:57:31.314Z] [INFO] Framework Lookup: "Conflict Detection" at test-conflict-severity.js | Status: SUCCESS | Context: { numConflicts: 4,
+  conflictTypes: [ 'PRINCIPLE', 'PRINCIPLE', 'CROSS_ACTION_VALUE', 'CROSS_ACTION_PRINCIPLE' ] }

@@ -1,0 +1,162 @@
+[
+  {
+    "precedent_id": "trolley_problem",
+    "title": "Trolley Problem",
+    "description": "A runaway trolley is heading down the tracks toward five people who will be killed if it continues. You can pull a lever to divert the trolley to another track where it will kill one person instead. Would you pull the lever?",
+    "frameworks": ["Utilitarianism", "Kantian Deontology"],
+    "situation": {
+      "type": "Ethical Dilemma",
+      "context": ["Life-or-death decision", "significant consequences"],
+      "key_factors": [
+        "lives at stake",
+        "active intervention",
+        "responsibility for outcome"
+      ]
+    },
+    "reasoning_paths": [
+      {
+        "framework": "Utilitarianism",
+        "conclusion": "pull_lever",
+        "strength": "strong",
+        "argument": "From a utilitarian perspective, the right action is to pull the lever. This maximizes overall welfare by saving five lives at the cost of one. While tragic, the utilitarian calculus clearly favors intervention to minimize overall harm."
+      },
+      {
+        "framework": "Deontology",
+        "conclusion": "dont_pull",
+        "strength": "moderate",
+        "argument": "From a deontological perspective, one should not pull the lever. Actively diverting the trolley would be using the one person as a means to save the five, violating the categorical imperative. The moral duty is to avoid directly causing harm, even if more harm results indirectly."
+      }
+    ]
+  },
+  {
+    "precedent_id": "crying_baby_dilemma",
+    "title": "Crying Baby Dilemma",
+    "description": "During wartime, you are hiding in a basement with a group of people, including a baby. Enemy soldiers are searching house to house, and the baby begins to cry. If you cover the baby's mouth to silence it, you risk suffocating it, but if you don't, the soldiers will find your group and kill everyone. What do you do?",
+    "frameworks": ["Utilitarianism", "Virtue Ethics"],
+    "situation": {
+      "type": "Ethical Dilemma",
+      "context": ["Wartime survival scenario", "innocent lives at stake"],
+      "key_factors": [
+        "lives at stake",
+        "innocent child",
+        "uncertainty of outcome",
+        "time pressure"
+      ]
+    },
+    "reasoning_paths": [
+      {
+        "framework": "Utilitarianism",
+        "conclusion": "silence_baby",
+        "strength": "moderate",
+        "argument": "From a utilitarian perspective, silencing the baby (taking care not to suffocate it) would be justified to save the lives of everyone in the group. The potential harm to one is outweighed by the certain death of all if discovered."
+      },
+      {
+        "framework": "Virtue Ethics",
+        "conclusion": "protect_but_not_harm",
+        "strength": "moderate",
+        "argument": "A virtuous person would seek a third option - perhaps finding a way to muffle but not harm the baby, or creating a distraction. Virtue ethics focuses on character and would reject taking an action that harms an innocent, suggesting creativity and courage are needed."
+      }
+    ]
+  },
+  {
+    "precedent_id": "transplant_dilemma",
+    "title": "Transplant Dilemma",
+    "description": "You are a doctor with five patients who need organ transplants. Each needs a different organ, and all will die without the transplant. A healthy traveler comes to your hospital for a routine check-up. You discover that this person is a perfect match for all five patients. Would you kill the traveler to save your five patients?",
+    "frameworks": ["Professional Ethics", "Rights-Based Ethics"],
+    "situation": {
+      "type": "Medical Ethics",
+      "context": ["Medical decision", "significant moral implications"],
+      "key_factors": [
+        "lives at stake",
+        "medical authority",
+        "professional ethics",
+        "active intervention"
+      ]
+    },
+    "reasoning_paths": [
+      {
+        "framework": "Professional Duty Ethics",
+        "conclusion": "dont_harvest_organs",
+        "strength": "strong",
+        "argument": "As a medical professional, your duty is first to do no harm. The professional ethics of medicine absolutely prohibit sacrificing one patient to save others, regardless of the utilitarian calculus. Trust in the medical profession would collapse if such actions were permitted."
+      },
+      {
+        "framework": "Rights-Based Ethics",
+        "conclusion": "dont_harvest_organs",
+        "strength": "strong",
+        "argument": "The traveler has fundamental rights to life and bodily autonomy that cannot be violated, even to save five others. Rights are not subject to utilitarian calculations - they serve as constraints on what actions are permissible regardless of consequences."
+      }
+    ]
+  },
+  {
+    "precedent_id": "medical_triage",
+    "title": "Medical Triage",
+    "description": "In a mass casualty event, doctors must decide which patients to treat first when resources are limited. Some patients with severe injuries may be deprioritized if their chances of survival are low, even with treatment.",
+    "frameworks": ["Utilitarianism", "Justice/Fairness", "Professional Ethics"],
+    "situation": {
+      "type": "ResourceAllocationDilemma",
+      "context": ["Medical emergency", "limited resources"],
+      "key_factors": [
+        "limited medical resources",
+        "multiple critical patients",
+        "prioritization required",
+        "life-or-death consequences"
+      ]
+    },
+    "actions": {
+      "prioritize_greatest_good": {
+        "description": "Prioritize patients with the highest chance of survival."
+      },
+      "treat_equally_urgent_cases_first": {
+        "description": "Treat the most urgent cases first, regardless of prognosis."
+      },
+      "follow_triage_protocol": {
+        "description": "Follow established triage protocols."
+      }
+    },
+    "reasoning_paths": [
+      {
+        "framework": "Utilitarianism",
+        "conclusion": "prioritize_greatest_good",
+        "strength": "strong",
+        "argument": "In a triage situation, the ethical principle of utilitarianism dictates that medical resources should be allocated to maximize the number of lives saved. This may mean prioritizing patients with a higher chance of survival, even if it means others with lower chances will not receive immediate treatment.",
+        "parameter": {
+          "lives_saved": {
+            "value": "maximized",
+            "weight": 0.9,
+            "description": "Maximize the number of lives saved"
+          }
+        },
+        "factor": {}
+      },
+      {
+        "framework": "Justice/Fairness",
+        "conclusion": "treat_equally_urgent_cases_first",
+        "strength": "moderate",
+        "argument": "A fairness-based approach would prioritize treating the most urgent cases first, regardless of their overall prognosis. This ensures that everyone with an immediate life-threatening condition has an equal opportunity to receive care, even if resources are scarce.",
+        "parameter": {
+          "equal_opportunity": {
+            "value": "provided",
+            "weight": 0.7,
+            "description": "Provide equal opportunity for care"
+          }
+        },
+        "factor": {}
+      },
+      {
+        "framework": "Professional Duty Ethics",
+        "conclusion": "follow_triage_protocol",
+        "strength": "strong",
+        "argument": "Medical professionals have a duty to follow established triage protocols in emergency situations. These protocols are designed to be ethically sound and provide a consistent, defensible framework for making difficult decisions under pressure.",
+        "parameter": {
+          "protocol_adherence": {
+            "value": "followed",
+            "weight": 0.8,
+            "description": "Adherence to established protocols"
+          }
+        },
+        "factor": {}
+      }
+    ]
+  }
+]

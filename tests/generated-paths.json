@@ -1,0 +1,134 @@
+[
+  {
+    "id": "synthetic_hybrid_1741582644653_relocate_facility_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644653_install_filters_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644653_continue_operations_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_relocate_facility_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_install_filters_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_continue_operations_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_relocate_facility_1741582644671",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_install_filters_1741582644671",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_continue_operations_1741582644672",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_relocate_facility_1741582644672",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_install_filters_1741582644673",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_continue_operations_1741582644673",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  }
+]

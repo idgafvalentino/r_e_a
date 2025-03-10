@@ -1,0 +1,43 @@
+{
+  "resolutions": [
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Compromise)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "compromise",
+      "resolutionDescription": "Resolves conflict by finding a middle ground between competing ethical frameworks. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Utilitarianism-Rights-Based Ethics (Compromise)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "originalFrameworks": [
+        "Utilitarianism",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_PRINCIPLE",
+      "resolutionStrategy": "compromise",
+      "resolutionDescription": "Resolves conflict by finding a middle ground between competing ethical frameworks. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    },
+    {
+      "framework": "Reconciled Virtue Ethics-Rights-Based Ethics (Compromise)",
+      "action": "install_filters",
+      "strength": "moderate",
+      "originalFrameworks": [
+        "Virtue Ethics",
+        "Rights-Based Ethics"
+      ],
+      "conflictType": "CROSS_ACTION_VALUE",
+      "resolutionStrategy": "compromise",
+      "resolutionDescription": "Resolves conflict by finding a middle ground between competing ethical frameworks. This resolution addresses a highly relevant action (90% relevance).",
+      "actionRelevance": 0.9
+    }
+  ]
+}

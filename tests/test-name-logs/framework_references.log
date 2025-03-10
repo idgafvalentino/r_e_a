@@ -1,0 +1,14 @@
+[2025-03-09T07:36:49.294Z] [INFO] Logs and statistics reset
+[2025-03-09T07:36:49.295Z] [INFO] Framework Reference: "Utilitarianism" at testWithRealDilemmas.reference | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.296Z] [INFO] Framework Reference: "Kantian Deontology" at testWithRealDilemmas.reference | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.296Z] [INFO] Framework Reference: "Virtue Ethics" at testWithRealDilemmas.reference | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.297Z] [INFO] Framework Reference: "Care Ethics" at testWithRealDilemmas.reference | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.297Z] [INFO] Framework Reference: "Double Effect Principle" at testWithRealDilemmas.reference | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.298Z] [INFO] Framework Lookup: "Utilitarianism" at testWithRealDilemmas.lookup | Status: SUCCESS | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.299Z] [INFO] Framework Lookup: "Kantian Deontology" at testWithRealDilemmas.lookup | Status: SUCCESS | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.299Z] [INFO] Framework Lookup: "Virtue Ethics" at testWithRealDilemmas.lookup | Status: SUCCESS | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.300Z] [INFO] Framework Lookup: "Care Ethics" at testWithRealDilemmas.lookup | Status: SUCCESS | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.300Z] [INFO] Framework Lookup: "Double Effect Principle" at testWithRealDilemmas.lookup | Status: SUCCESS | Context: { dilemma: 'Crying Baby Dilemma', source: 'reasoning_paths' }
+[2025-03-09T07:36:49.301Z] [WARNING] Framework Lookup: "Non-existent Framework" at testWithRealDilemmas.lookup | Status: FAILURE | Context: { dilemma: 'Crying Baby Dilemma',
+  source: 'reasoning_paths',
+  reason: 'Framework not found' }

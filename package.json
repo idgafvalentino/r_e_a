@@ -1,0 +1,32 @@
+{
+  "name": "rea-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cli.js",
+    "test": "mocha tests/test-resolution-strategies.js",
+    "test:all": "mocha tests/*.js",
+    "test:action-relevance": "mocha tests/test-action-relevance.js",
+    "test:enhanced-resolution": "mocha tests/test-enhanced-resolution.js",
+    "test:conflict-resolution": "mocha tests/test-conflict-resolution.js",
+    "test:conflict-severity": "mocha tests/test-conflict-severity.js",
+    "test:comprehensive-granular-conflicts": "mocha tests/test-comprehensive-granular-conflicts.js",
+    "test:find-relevant-precedents": "mocha tests/test-find-relevant-precedents.js",
+    "test:dilemma-creation": "mocha tests/test-dilemma-creation.js",
+    "test:dilemma-adaptation": "mocha tests/test-dilemma-with-adaptation.js",
+    "test:adaptation-rules": "mocha tests/test-adaptation-rules.js",
+    "test:advanced-synthetic-precedent": "node tests/test-advanced-synthetic-precedent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fuzzyset.js": "^1.0.7",
+    "natural": "^8.0.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}

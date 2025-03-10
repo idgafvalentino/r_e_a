@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-03-09T07:36:49.302Z",
+  "totalReferences": 5,
+  "totalLookups": 6,
+  "successfulLookups": 5,
+  "failedLookups": 1,
+  "successRate": "83.33%",
+  "mostReferencedFrameworks": [
+    [
+      "Utilitarianism",
+      1
+    ],
+    [
+      "Kantian Deontology",
+      1
+    ],
+    [
+      "Virtue Ethics",
+      1
+    ],
+    [
+      "Care Ethics",
+      1
+    ],
+    [
+      "Double Effect Principle",
+      1
+    ]
+  ],
+  "commonFailureReasons": [],
+  "failureHotspots": [
+    [
+      "testWithRealDilemmas.lookup",
+      1
+    ]
+  ],
+  "recommendations": [
+    "Focus on these failure hotspots: testWithRealDilemmas.lookup"
+  ],
+  "detailedAnalysis": {
+    "failures": [
+      {
+        "context": "{ dilemma: 'Crying Baby Dilemma',\n  source: 'reasoning_paths',\n  reason: 'Framework not found' }"
+      }
+    ],
+    "analyzed": true,
+    "patterns": {
+      "timeBasedPatterns": [],
+      "sequencePatterns": []
+    },
+    "nameIssues": {
+      "caseInconsistencies": [],
+      "formatInconsistencies": [],
+      "similarNames": [],
+      "identified": false
+    }
+  },
+  "patternAnalysis": {
+    "timeBasedPatterns": [],
+    "sequencePatterns": []
+  },
+  "frameworkStructureAnalysis": {
+    "commonStructures": [],
+    "structuralInconsistencies": []
+  }
+}

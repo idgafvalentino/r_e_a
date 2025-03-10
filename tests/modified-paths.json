@@ -1,0 +1,184 @@
+[
+  {
+    "id": "synthetic_hybrid_1741582644653_relocate_facility_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": [
+      {
+        "type": "principle",
+        "id": "Hybrid:_consequentialism_+_rights_based_relocate_facility_principle_1741582644835_ewwit",
+        "content": "The only morally acceptable action is to completely eliminate all health risks by relocating the facility, regardless of economic costs.",
+        "framework": "Hybrid: consequentialism + rights_based",
+        "framework_id": "synthetic_hybrid_1741582644653_relocate_facility_1741582644669",
+        "framework_type": "hybrid",
+        "weight": 0.9,
+        "relevance": 0.95,
+        "strength": "strong",
+        "conclusion": "relocate_facility"
+      },
+      {
+        "type": "justification",
+        "id": "Hybrid:_consequentialism_+_rights_based_relocate_facility_justification_1741582644835_ox74z",
+        "content": "Studies show that even with advanced filtration, residual pollutants pose unacceptable health risks to the community.",
+        "framework": "Hybrid: consequentialism + rights_based",
+        "framework_id": "synthetic_hybrid_1741582644653_relocate_facility_1741582644669",
+        "framework_type": "hybrid",
+        "weight": 0.85,
+        "relevance": 0.9,
+        "strength": "moderate",
+        "conclusion": "relocate_facility"
+      }
+    ]
+  },
+  {
+    "id": "synthetic_hybrid_1741582644653_install_filters_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": [
+      {
+        "type": "principle",
+        "id": "Hybrid:_consequentialism_+_rights_based_install_filters_principle_1741582644835_9m33t",
+        "content": "Economic considerations must be balanced with health risks, making filtration the only acceptable compromise.",
+        "framework": "Hybrid: consequentialism + rights_based",
+        "framework_id": "synthetic_hybrid_1741582644653_install_filters_1741582644669",
+        "framework_type": "hybrid",
+        "weight": 0.9,
+        "relevance": 0.95,
+        "strength": "strong",
+        "conclusion": "install_filters"
+      },
+      {
+        "type": "justification",
+        "id": "Hybrid:_consequentialism_+_rights_based_install_filters_justification_1741582644835_esy3c",
+        "content": "Scientific evidence indicates that modern filtration systems can reduce pollutants to safe levels, making relocation unnecessary.",
+        "framework": "Hybrid: consequentialism + rights_based",
+        "framework_id": "synthetic_hybrid_1741582644653_install_filters_1741582644669",
+        "framework_type": "hybrid",
+        "weight": 0.85,
+        "relevance": 0.9,
+        "strength": "moderate",
+        "conclusion": "install_filters"
+      }
+    ]
+  },
+  {
+    "id": "synthetic_hybrid_1741582644653_continue_operations_1741582644669",
+    "framework": "Hybrid: consequentialism + rights_based",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_relocate_facility_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_install_filters_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644657_continue_operations_1741582644670",
+    "framework": "Hybrid: consequentialism + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_relocate_facility_1741582644671",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_install_filters_1741582644671",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644661_continue_operations_1741582644672",
+    "framework": "Hybrid: rights_based + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_relocate_facility_1741582644672",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "relocate_facility",
+    "conclusion": "relocate_facility",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_install_filters_1741582644673",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "install_filters",
+    "conclusion": "install_filters",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  },
+  {
+    "id": "synthetic_hybrid_1741582644668_continue_operations_1741582644673",
+    "framework": "Hybrid: consequentialism + rights_based + virtue_ethics",
+    "action": "continue_operations",
+    "conclusion": "continue_operations",
+    "strength": "weak",
+    "argument": "A Hybrid: consequentialism + rights_based + virtue_ethics perspective suggests undefined.",
+    "relevance": 0.5,
+    "is_synthetic": true,
+    "source_elements": []
+  }
+]
